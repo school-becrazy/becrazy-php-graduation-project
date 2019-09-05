@@ -14,13 +14,22 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
+            // 主キー
             $table->bigIncrements('id');
+            // ユーザー名前
             $table->string('name');
+            // メールアドレス(ログインID)
             $table->string('email')->unique();
+            // メールアドレス確認日時(使用しない)
             $table->timestamp('email_verified_at')->nullable();
+            // パスワードハッシュ
             $table->string('password');
+            // remember meトークン(ログイン継続用)
             $table->rememberToken();
+            // created_at, updated_at
             $table->timestamps();
+            // 論理削除用カラム
+            // https://readouble.com/laravel/5.8/ja/eloquent.html#soft-deleting
             $table->softDeletes();
         });
     }

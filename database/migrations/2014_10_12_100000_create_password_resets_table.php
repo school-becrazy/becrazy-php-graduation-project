@@ -8,6 +8,8 @@ class CreatePasswordResetsTable extends Migration
 {
     /**
      * Run the migrations.
+     * パスワードリセット用テーブル作成
+     * 課題では利用しない
      *
      * @return void
      */
@@ -27,6 +29,7 @@ class CreatePasswordResetsTable extends Migration
 
     /**
      * Reverse the migrations.
+     * テーブル削除
      *
      * @return void
      */

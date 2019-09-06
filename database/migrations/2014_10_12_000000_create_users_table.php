@@ -7,6 +7,7 @@ use Illuminate\Database\Migrations\Migration;
 class CreateUsersTable extends Migration
 {
     /**
+     * Run the migrations.
      * ユーザーテーブル作成
      * 管理ユーザーを管理するためのテーブル
      * メールアドレスとパスワードで認証を行う
@@ -48,6 +49,7 @@ class CreateUsersTable extends Migration
     }
 
     /**
+     * Reverse the migrations.
      * テーブル削除
      *
      * @return void

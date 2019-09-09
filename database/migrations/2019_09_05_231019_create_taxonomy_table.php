@@ -22,7 +22,27 @@ class CreateTaxonomyTable extends Migration
             $table->charset = 'utf8mb4';
             $table->collation = 'utf8mb4_bin';
 
+            // 主キー
             $table->bigIncrements('id');
+
+            // 分類タイプ
+            // category: カテゴリー
+            // tag: タグ
+            $table->string('type', 32)->nullable(false);
+
+            // 分類名
+            // カテゴリー名やタグ名
+            $table->string('name')->nullable(false);
+
+            // 分類スラッグ
+            // カテゴリーページやタグページのURLの一部になる
+            // 例) http://example.com/category/slug
+            $table->string('slug', 200)->nullable(false);
+
+            // 分類の説明文
+            $table->longText('description');
+
+            // created_at・updated_at
             $table->timestamps();
         });
     }

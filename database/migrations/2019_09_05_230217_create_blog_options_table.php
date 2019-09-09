@@ -21,7 +21,22 @@ class CreateBlogOptionsTable extends Migration
             $table->charset = 'utf8mb4';
             $table->collation = 'utf8mb4_bin';
 
+            // 主キー
             $table->bigIncrements('id');
+
+            // キー名 ユニーク nullを許可しない
+            $table->string('key_name')->unique()->nullable(false);
+
+            // 設定値 nullを許可しない
+            $table->string('option_value')->nullable(false);
+
+            // 自動読み込み設定
+            // 1: 設定値自動読み込み
+            // 0: 自動読み込みしない
+            // デフォルト 1
+            $table->tinyInteger('autoload')->default(1);
+
+            // created_at・updated_at
             $table->timestamps();
         });
     }

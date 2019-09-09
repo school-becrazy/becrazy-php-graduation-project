@@ -40,7 +40,7 @@ class CreateTaxonomyTable extends Migration
             $table->string('slug', 200)->nullable(false);
 
             // 分類の説明文
-            $table->longText('description');
+            $table->longText('description')->nullable();
 
             // created_at・updated_at
             $table->timestamps();

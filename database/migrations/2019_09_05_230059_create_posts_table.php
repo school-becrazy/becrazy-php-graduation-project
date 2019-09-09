@@ -34,7 +34,7 @@ class CreatePostsTable extends Migration
             $table->string('title')->nullable(false);
 
             // 本文
-            $table->longText('content');
+            $table->longText('content')->nullable();
 
             // 投稿状態 nullを許可しない
             // publish: 公開済み

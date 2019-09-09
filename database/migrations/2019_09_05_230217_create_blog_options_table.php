@@ -8,6 +8,8 @@ class CreateBlogOptionsTable extends Migration
 {
     /**
      * Run the migrations.
+     * ブログオプションテーブル作成
+     * ブログ全体の設定に関わるレコードをkey-value形式で保存する
      *
      * @return void
      */

@@ -42,7 +42,7 @@ class CreateUsersTable extends Migration
             // created_at, updated_at
             $table->timestamps();
 
-            // 論理削除用カラム
+            // deleted_at 論理削除用カラム
             // https://readouble.com/laravel/5.8/ja/eloquent.html#soft-deleting
             $table->softDeletes();
         });

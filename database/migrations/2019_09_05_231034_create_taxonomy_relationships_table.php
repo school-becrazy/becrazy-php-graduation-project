@@ -8,6 +8,9 @@ class CreateTaxonomyRelationshipsTable extends Migration
 {
     /**
      * Run the migrations.
+     * タクソノミー中間テーブル
+     * postsテーブルとtaxonomyテーブルを紐付ける中間テーブル
+     * これで複数の記事に対して複数のカテゴリーやタグを紐付ける
      *
      * @return void
      */

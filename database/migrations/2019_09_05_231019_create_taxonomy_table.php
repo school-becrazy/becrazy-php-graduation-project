@@ -39,7 +39,7 @@ class CreateTaxonomyTable extends Migration
             // 例) http://example.com/category/slug
             $table->string('slug', 200)->nullable(false);
 
-            // 分類の説明文
+            // 分類の説明文 nullを許可
             $table->longText('description')->nullable();
 
             // created_at・updated_at

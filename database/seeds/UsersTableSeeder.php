@@ -13,13 +13,22 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        // ユーザー名: test-user
-        // メールアドレス: test-user@example.com
-        // パスワード: password
-        DB::table('users')->insert([
-            'name' => 'test-user',
-            'email' => 'test-user@example.com',
-            'password' => bcrypt('password'),
-        ]);
+        $table = DB::table('users');
+
+        // シードデータの配列
+        $seed_data = [
+            // ユーザー名: test-user
+            // メールアドレス: test-user@example.com
+            // パスワード: password
+            [
+                'name' => 'test-user',
+                'email' => 'test-user@example.com',
+                'password' => bcrypt('password'),
+            ]
+        ];
+
+        foreach ($seed_data as $value) {
+            $table->insert($value);
+        }
     }
 }

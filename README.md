@@ -57,3 +57,15 @@ BeCrazyスクールにおける**PHPフルスタックエンジニアカリキ�
     * メディア(画像)一覧
     * 画像追加
     * 画像削除
+
+## 課題の進め方
+
+本リポジトリは課題の基礎となるリポジトリです。このリポジトリには以下のものが同梱されています。
+
+* Laravelフレームワーク
+
+* Homesteadを起動するためのVagrantfile
+
+* テーブル作成のためのマイグレーションファイル(Laravelでマイグレーションを行う)
+
+実際に課題に取り掛かる場合には、GitHub.comのアカウントを作成した上で、[https://github.com/nrhrhysd616/becrazy-school-blog](https://github.com/nrhrhysd616/becrazy-school-blog)こちらのリポジトリURLから、自分のリポジトリへForkを行ってください。

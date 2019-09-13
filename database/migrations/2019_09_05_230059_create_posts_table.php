@@ -46,6 +46,7 @@ class CreatePostsTable extends Migration
             // スラッグ(URLの一部になる文字列) nullを許可しない
             // 記事ごとのURLを決定する
             // 例) http://example.com/article/slug
+            //
             // アップロードメディアの場合には保存したファイルのパスを保存
             // 例) ドキュメントルートが/var/www/laravel/publicで、/var/www/laravel/public/upload配下にファイルを保存する場合
             // /upload/2019/08/attachment.jpegなどとなる

@@ -84,9 +84,14 @@ BeCrazyスクールにおける**PHPフルスタックエンジニアカリキ�
 3. `composer install`を行い、本プロジェクトで利用するライブラリをインストール
 
 4. Homesteadを設定するために、以下のコマンドを実行
+
 macOSの場合:`php vendor/bin/homestead make`
+
 Windowsの場合:`vendor\bin\homestead make`
+
 場合によっては鍵生成も行うこと。鍵生成については[こちら](https://it.becrazy.jp/article/laravel-homestead-setting)
+
+その他Homesteadの設定を各自で変更してもOK
 
 5. Homestead仮想マシンを起動`vagrant up`
 

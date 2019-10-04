@@ -83,7 +83,11 @@ BeCrazyスクールにおける**PHPフルスタックエンジニアカリキ�
 
 3. `composer install`を行い、本プロジェクトで利用するライブラリをインストール
 
-4. Homesteadを設定するために、以下のコマンドを実行
+4. `.env.example`をコピーして`.env`ファイルを作成
+
+5. ターミナルまたはコマンドプロンプトでプロジェクトディレクトリに移動し、`php artisan key:generate`コマンドを実行し、アプリケーションキーの生成
+
+6. Homesteadを設定するために、以下のコマンドを実行
 
     macOSの場合:`php vendor/bin/homestead make`
 
@@ -93,14 +97,15 @@ BeCrazyスクールにおける**PHPフルスタックエンジニアカリキ�
 
     その他Homesteadの設定を各自で変更してもOK
 
-5. Homestead仮想マシンを起動`vagrant up`
+7. Homestead仮想マシンを起動`vagrant up`
 
-6. `Homestead.yaml`ファイルに従いIPアドレスでアクセスして確認
-この時点でWelcomeページが表示可能
+8. `Homestead.yaml`ファイルに従いIPアドレスでアクセスして確認
 
-7. `vagrant ssh`で仮想マシンにログインし、マイグレーションを実行しテーブル作成
+    この時点でWelcomeページが表示可能
 
-8. 開発スタート！
+9. `vagrant ssh`で仮想マシンにログインし、マイグレーションを実行しテーブル作成
+
+10. 開発スタート！
 
 
 ## データベースについて
@@ -142,6 +147,21 @@ BeCrazyスクールにおける**PHPフルスタックエンジニアカリキ�
 
 これでブログに関わる全ての機能を実現できます。
 テーブルに設定している詳細のカラム情報についてはマイグレーションファイルを参照してください。(app/database/migrationsフォルダ)
+
+### DB接続情報
+
+`.env`ファイルのDB接続設定は以下の用にすること
+
+```
+DB_CONNECTION=mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
+
+
 
 ## Appendex
 

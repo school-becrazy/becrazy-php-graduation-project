@@ -75,6 +75,29 @@ BeCrazyスクールにおける**PHPフルスタックエンジニアカリキ�
 
 公開リポジトリでフォーク後、上記の内容を開発し随時コミット&プッシュを進めてください。
 
+### 開発開始までの手順
+
+1. このリポジトリをフォークして自分のプロジェクトとして立ち上げる
+
+2. クローンしてソースコードをダウンロード
+
+3. `composer install`を行い、本プロジェクトで利用するライブラリをインストール
+
+4. Homesteadを設定するために、以下のコマンドを実行
+macOSの場合:`php vendor/bin/homestead make`
+Windowsの場合:`vendor\bin\homestead make`
+場合によっては鍵生成も行うこと。鍵生成については[こちら](https://it.becrazy.jp/article/laravel-homestead-setting)
+
+5. Homestead仮想マシンを起動`vagrant up`
+
+6. `Homestead.yaml`ファイルに従いIPアドレスでアクセスして確認
+この時点でWelcomeページが表示可能
+
+7. `vagrant ssh`で仮想マシンにログインし、マイグレーションを実行しテーブル作成
+
+8. 開発スタート！
+
+
 ## データベースについて
 
 各テーブルスキーマについて以下に解説します。

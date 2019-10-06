@@ -161,6 +161,14 @@ DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
 
+## 注意点
+
+今回利用しているLaravelの **バージョンは6** です。
+授業で教えていたLaravelはバージョン5.8でしたが最近新しいバージョンがリリースされました。
+バージョン6ではいくつか変更が加わっているので注意してください。
+特に認証機能の作成コマンドである`php artisan make:auth`が利用できなくなっています。
+詳細はこちらの[バージョン6用のドキュメント](https://readouble.com/laravel/6.0/ja/authentication.html)を読んでください。
+
 ## Appendex
 
 その他不明点あれば先生に聞いてください。

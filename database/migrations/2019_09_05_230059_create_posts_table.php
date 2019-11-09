@@ -80,6 +80,7 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
+        // downのときはテーブル削除
         Schema::dropIfExists('posts');
     }
 }

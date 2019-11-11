@@ -57,7 +57,7 @@ class CreatePostsTable extends Migration
             // page: 固定ページ(ブログ紹介ページや自己紹介ページ等の記事以外)
             // attachment: 画像などのアップロードメディア
             $table->string('type', 15)->default('article')->nullable(false);
-            // slugカラムとtypeカラムで複合一意キーを設定
+            // slugカラムとtypeカラムで複合一意キー(詳しくは自分で調査)を設定
             // これで同一URLの記事を作成しないように制限する
             $table->unique(['slug', 'type']);
 

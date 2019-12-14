@@ -1,12 +1,14 @@
 {
-    "name": "laravel/laravel",
+    "name": "becrazy/becrazy-school-blog",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Laravelフレームワークでブログの作成課題",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "becrazy"
     ],
     "license": "MIT",
+    "homepage": "https://it.becrazy.jp",
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",

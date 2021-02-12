@@ -8,7 +8,7 @@ BeCrazyスクールにおける**PHPフルスタックエンジニアカリキ�
 
 ## 課題の概要
 
-作成するのは自分専用のブログです。Laravel v6.0を利用して
+作成するのは自分専用のブログです。Laravel v6を利用して
 自分専用のブログシステムを作成していただきます。
 
 もちろん先生に課題の内容に関しての質問はOKです。
@@ -70,7 +70,7 @@ BeCrazyスクールにおける**PHPフルスタックエンジニアカリキ�
 
 * テーブル作成のためのマイグレーションファイル(Laravelでマイグレーションを行う)
 
-実際に課題に取り掛かる場合には、GitHub.comのアカウントを作成した上で、[リポジトリURL](https://github.com/nrhrhysd616/becrazy-school-blog)から、自分のリポジトリへForkを行ってください。
+実際に課題に取り掛かる場合には、GitHub.comのアカウントを作成した上で、[リポジトリURL](https://github.com/school-becrazy/becrazy-php-graduation-project.git)から、自分のリポジトリへForkを行ってください。
 
 作成するリポジトリは公開リポジトリ(public)で、先生がコミット状況を把握できるようにしてください。
 

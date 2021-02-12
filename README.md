@@ -1,4 +1,4 @@
-# becrazy-school-blog
+# becrazy-php-graduation-project
 
 becrazyのPHPフルスタックエンジニア版最終課題プロジェクト(ブログ)
 

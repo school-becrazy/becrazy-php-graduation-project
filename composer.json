@@ -1,7 +1,7 @@
 {
-    "name": "becrazy/becrazy-school-blog",
+    "name": "school-becrazy/becrazy-php-graduation-project",
     "type": "project",
-    "description": "Laravelフレームワークでブログの作成課題",
+    "description": "Laravelフレームワークでブログを作成(最終課題)",
     "keywords": [
         "framework",
         "laravel",
